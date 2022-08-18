@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokédex</title>
+    <link rel="icon" href="favicon/favicon-16x16.png">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- defer para garantir que o JS não carregue primeiro ou informar no final do body -->
+    <script defer src="./js/script.js"></script>
+</head>
+<body>
+    <main>
+        <img src="imagens/pokedex.jpg" alt="pokedex" class="pokedex">
+
+        <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/9.png" alt="pokemon" class="pokemon__image">
+
+        <h1 class="pokemon__data">
+            <span class="pokemon__number">99</span> -
+            <span class="pokemon__name">blastoise</span>
+        </h1>
+
+        <div class="pokemon__medidas">
+            <p class="pokemon__altura">Altura</p>
+            <p class="pokemon__altura--valor">100</p>
+            <p class="pokemon__altura--valor--medida">Ht</p>
+            <p class="pokemon__peso">Peso</p>
+            <p class="pokemon__peso--valor">200</p>
+            <p class="pokemon__altura--valor--medida">lbs.</p>
+        </div>
+
+        <div class="buttons">
+            <button class="button btn-prev">&lt;</button>
+            <button class="button btn-next">&gt;</button>
+        </div>
+
+        <form class="form">
+            <input
+              type="search"
+              class="input__search"
+              placeholder="Nome ou Número"
+              required
+            />
+        </form>
+
+        <div class="pokemon__tipos">
+            <p class="pokemon__tipo1">grass</p>
+            <p class="pokemon__tipo2">poison</p>
+        </div>
+    </main>
+</body>
+</html>
