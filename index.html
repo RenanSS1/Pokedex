@@ -12,22 +12,44 @@
 </head>
 <body>
     <main>
-        <img src="imagens/pokedex.jpg" alt="pokedex" class="pokedex">
+        <div class="conteiner__topo">
+            <div class="topo__esquerdo">
+                <svg width="65" height="65">
+                    <circle cx="35 " cy="35" r="27" fill="black" />
+                    <circle cx="35 " cy="35" r="25" fill="#1E90FF" />
+                 </svg>
+            </div>
+            <div class="divisao"></div>
+            <div class="topo__direito"></div>
+            <div class="divisao__baixo"></div>
+            <div class="baixo__direito"></div>
+        </div>
 
-        <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/9.png" alt="pokemon" class="pokemon__image">
+        <div class="conteiner__externo">
+            <div class="conteiner__pokemon__image">
+                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/9.png" alt="pokemon" class="pokemon__image">
+            </div>
+            <h1 class="pokemon__data">
+                <span class="pokemon__number">99</span> -
+                <span class="pokemon__name">blastoise</span>
+            </h1>
+        </div>
 
-        <h1 class="pokemon__data">
-            <span class="pokemon__number">99</span> -
-            <span class="pokemon__name">blastoise</span>
-        </h1>
-
-        <div class="pokemon__medidas">
-            <p class="pokemon__altura">Altura</p>
-            <p class="pokemon__altura--valor">100</p>
-            <p class="pokemon__altura--valor--medida">Ht</p>
-            <p class="pokemon__peso">Peso</p>
-            <p class="pokemon__peso--valor">200</p>
-            <p class="pokemon__altura--valor--medida">lbs.</p>
+        <div class="conteiner__info">
+            <div class="pokemon__medidas">
+                <p class="pokemon__altura">Altura</p>
+                <p class="pokemon__altura--valor">100</p>
+                <p class="pokemon__altura--valor--medida">Ht</p>
+                <p class="pokemon__peso">Peso</p>
+                <p class="pokemon__peso--valor">200</p>
+                <p class="pokemon__altura--valor--medida">lbs.</p>
+            </div>
+            <div class="pokemon__tipos">
+                <p class="pokemon__tipo">Tipo 1</p>
+                <p class="pokemon__tipo1">grass</p>
+                <p class="pokemon__tipo">Tipo 1</p>
+                <p class="pokemon__tipo2">poison</p>
+            </div>
         </div>
 
         <div class="buttons">
@@ -43,11 +65,6 @@
               required
             />
         </form>
-
-        <div class="pokemon__tipos">
-            <p class="pokemon__tipo1">grass</p>
-            <p class="pokemon__tipo2">poison</p>
-        </div>
     </main>
 </body>
 </html>
