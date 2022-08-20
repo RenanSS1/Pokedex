@@ -1,5 +1,9 @@
 # Pokedex
 Meu modelo de pokedex
+
+https://renanss1.github.io/Pokedex/
+
+
 Criado com base no projeto do canal Manual do Dev: https://www.youtube.com/watch?v=SjtdH3dWLa8
 
 Consumindo a API: https://pokeapi.co/
