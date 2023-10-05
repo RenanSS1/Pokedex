@@ -42,10 +42,10 @@ const renderPokemon = async (pokemon) => {
     pokemonImage.style.display = 'block';
     pokemonName.innerHTML = data.name;
     pokemonNumber.innerHTML = data.id;
-    pokemonImage.src = data['sprites']['versions']['generation-v']['black-white']['animated']['front_default'];
+    pokemonImage.src = data['sprites']['versions']['generation-v']['black-white']['animated']['front_default'] || data['sprites']['front_default'];
     input.value = '';
-    pokemonAltura.innerHTML = data.height;
-    pokemonPeso.innerHTML = math.round ((data.weight) * 0.453592);
+    pokemonAltura.innerHTML = (data.height) / 10;
+    pokemonPeso.innerHTML = (data.weight) / 10;
     const type1 = data.types[0];
     const type2 = data.types[1];
     pokemonTipo1.innerHTML = type1 ? type1.type.name : '';
