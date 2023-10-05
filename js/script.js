@@ -45,7 +45,7 @@ const renderPokemon = async (pokemon) => {
     pokemonImage.src = data['sprites']['versions']['generation-v']['black-white']['animated']['front_default'];
     input.value = '';
     pokemonAltura.innerHTML = data.height;
-    pokemonPeso.innerHTML = (data.weight) * 0.453592;
+    pokemonPeso.innerHTML = math.round ((data.weight) * 0.453592);
     const type1 = data.types[0];
     const type2 = data.types[1];
     pokemonTipo1.innerHTML = type1 ? type1.type.name : '';
